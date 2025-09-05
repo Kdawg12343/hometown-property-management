@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Owners — Hometown Property Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600..700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header><div class="container nav"><a class="logo" href="index.html"><span class="logo-icon">H</span> Hometown Property Management</a><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="owners.html" class="active">For Owners</a><a href="tenants.html">For Tenants</a><a href="about.html">About</a><a href="contact.html">Contact</a> <a class="cta" href="owners.html">List Your Property</a></nav></div></header>
+<div class="container">
+  <div class="section">
+    <h2>Your rentals, professionally managed.</h2>
+    <p>Lower vacancies, quality tenants, clean reporting, and responsive maintenance—so you can be as hands‑off as you want.</p>
+  </div>
+  <div class="grid-3">
+    <div class="card"><strong>Assess</strong><p>Walkthrough and rent analysis to set expectations and prep the unit.</p></div>
+    <div class="card"><strong>Market & Screen</strong><p>Attractive listings, scheduled showings, checks for ID, income, references, and credit.</p></div>
+    <div class="card"><strong>Lease & Collect</strong><p>Clear leases, deposits handled properly, and on‑time rent collection.</p></div>
+  </div>
+  <div class="grid-3">
+    <div class="card"><strong>Maintain</strong><p>Local, vetted trades with timely updates and photos.</p></div>
+    <div class="card"><strong>Report</strong><p>Simple monthly statements. Year‑end summaries for taxes.</p></div>
+    <div class="card"><strong>Communicate</strong><p>We keep you informed and your tenants respected.</p></div>
+  </div>
+
+  <div class="banner"><strong>Ready to list?</strong> Tell us about your property and we’ll follow up.</div>
+
+  <form name="owner-intake" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
+    <input type="hidden" name="form-name" value="owner-intake">
+    <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+    <label>Full Name<input name="name" required></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>Phone<input name="phone"></label>
+    <label>Property Location<select name="location">
+      <option value="Weyburn">Weyburn</option>
+      <option value="Estevan">Estevan</option>
+      <option value="Other">Other (describe in message)</option>
+    </select></label>
+    <label>How can we help?<textarea name="message" rows="5" placeholder="Tell us about your property, timelines, and any questions."></textarea></label>
+    <button type="submit">Send</button>
+    <p class="small">This form is powered by Netlify Forms.</p>
+  </form>
+</div>
+
+<footer>
+  <div class="container">
+    <div style="display:flex; flex-wrap:wrap; gap:24px; justify-content:space-between;">
+      <div>
+        <div class="logo" style="color:white"><span class="logo-icon" style="background:linear-gradient(135deg, #3a7e53,#234)"><span>H</span></span> Hometown Property Management</div>
+        <p class="small">Serving Weyburn & Estevan • Licensed in Saskatchewan</p>
+      </div>
+      <div>
+        <a href="owners.html">Owners</a> · <a href="tenants.html">Tenants</a> · <a href="services.html">Services</a> · <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
